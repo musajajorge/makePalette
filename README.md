@@ -39,7 +39,7 @@ library(MakeYourPalette)
 
 You need an image in jpg, png, tiff or similar format, stored in the hard disk of your PC or in some url.
 
-### Examples with makePaletteCLARA (Clustering Large Applications)
+### Examples with the makePaletteCLARA function (Clustering Large Applications)
 
 #### Example 1
 
@@ -102,7 +102,7 @@ barplot(1:length(colors), col=colors)
 
 <img src="imgs/Rplot4.png" width="100%" />
 
-### Examples with makePaletteKM (k-Means)
+### Examples with the makePaletteKM function (k-Means)
 
 #### Example 5
 
