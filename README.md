@@ -24,13 +24,6 @@ Install **makePalette** from [**CRAN**](https://CRAN.R-project.org/package=makeP
 install.packages("makePalette")
 ```
 
-or install **makePalette** with
-
-``` r
-library(remotes)
-install_github("musajajorge/makePalette")
-```
-
 ## Usage :muscle:
 
 ``` r
