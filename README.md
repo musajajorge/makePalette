@@ -39,13 +39,30 @@ library(MakeYourPalette)
 
 You need an image in jpg, png, tiff or similar format, stored in the hard disk of your PC or in some url.
 
-### Examples with makePaletteCLARA ((Clustering Large Applications)
+### Examples with makePaletteCLARA (Clustering Large Applications)
 
 #### Example 1
 
 <img src="imgs/picture01.jpeg" width="100%"/>
 
+``` r
+url1 = "https://github.com/musajajorge/makePalette/raw/main/imgs/picture01.jpeg"
+colors <- makePaletteCLARA(url1)
+barplot(1:length(colors), col=colors)
+```
 
+By default, the MakePalette function will return a palette of 4 colors.
+
+<img src="imgs/Rplot1.1.png" width="100%" />
+
+If you want a palette with more colors, just specify it in the *n* parameter. 
+
+``` r
+colors <- makePaletteCLARA(url1, n = 10)
+barplot(1:length(colors), col=colors)
+```
+
+<img src="imgs/Rplot1.2.png" width="100%" />
 
 #### Example 2
 
@@ -72,64 +89,12 @@ You need an image in jpg, png, tiff or similar format, stored in the hard disk o
 
 #### Example 6
 
-<img src="imgs/picture04.tiff" width="100%"/>
+
 
 
 #### Example 7
 
 <img src="imgs/picture06.png" width="100%"/>
-
-
-
-malo
-
-
-
-### Example 1
-
-<img src="imgs/picture01.jpg" width="100%"/>
-
-``` r
-url <- "https://github.com/musajajorge/MakeYourPalette/raw/main/imgs/picture01.jpg"
-colors <- MakePalette(url)
-barplot(1:length(colors), col=colors)
-```
-By default, the MakePalette function will return a palette of 4 colors.
-
-<img src="imgs/ej1_1.png" width="100%" />
-
-If you want a palette with more colors, just specify it in the *n* parameter. 
-
-``` r
-colors <- MakePalette(url, n=10)
-barplot(1:length(colors), col=colors)
-```
-
-<img src="imgs/ej1_2.png" width="100%" />
-
-### Example 2
-
-<img src="imgs/picture02.jpg" width="100%" />
-
-``` r
-url <- "https://github.com/musajajorge/MakeYourPalette/raw/main/imgs/picture02.jpg"
-colors <- MakePalette(url, n=12)
-barplot(1:length(colors), col=colors)
-```
-
-<img src="imgs/ej2.png" width="100%" />
-
-### Example 3
-
-<img src="imgs/picture07.png" width="100%" />
-
-``` r
-url <- "https://github.com/musajajorge/MakeYourPalette/raw/main/imgs/picture07.png"
-colors <- MakePalette(url, n=7)
-barplot(1:length(colors), col=colors)
-```
-
-<img src="imgs/ej7.png" width="100%" />
 
 ------------
 
