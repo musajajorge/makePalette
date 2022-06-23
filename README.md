@@ -100,7 +100,7 @@ colors <- makePaletteCLARA(url6, n = 6)
 barplot(1:length(colors), col=colors)
 ```
 
-<img src="imgs/Rplot3.png" width="100%" />
+<img src="imgs/Rplot4.png" width="100%" />
 
 ### Examples with makePaletteKM (k-Means)
 
@@ -114,7 +114,7 @@ colors <- makePaletteKM(url2, n = 10)
 barplot(1:length(colors), col=colors)
 ```
 
-<img src="imgs/Rplot3.png" width="100%" />
+<img src="imgs/Rplot5.png" width="100%" />
 
 #### Example 6
 
@@ -124,7 +124,7 @@ colors <- makePaletteKM(url4, n = 6)
 barplot(1:length(colors), col=colors)
 ```
 
-<img src="imgs/Rplot3.png" width="100%" />
+<img src="imgs/Rplot6.png" width="100%" />
 
 #### Example 7
 
@@ -136,7 +136,7 @@ colors <- makePaletteKM(url6, n = 10)
 barplot(1:length(colors), col=colors)
 ```
 
-<img src="imgs/Rplot3.png" width="100%" />
+<img src="imgs/Rplot7.png" width="100%" />
 
 ------------
 
