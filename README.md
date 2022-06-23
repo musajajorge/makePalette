@@ -68,17 +68,39 @@ barplot(1:length(colors), col=colors)
 
 <img src="imgs/picture03.jpg" width="100%"/>
 
+``` r
+url3 = "https://github.com/musajajorge/makePalette/raw/main/imgs/picture03.jpg"
+colors <- makePaletteCLARA(url3, n = 6)
+barplot(1:length(colors), col=colors)
+```
+
+<img src="imgs/Rplot2.png" width="100%" />
 
 #### Example 3
 
 <img src="imgs/picture05.png" width="100%"/>
 
 
+``` r
+url5 = "https://github.com/musajajorge/makePalette/raw/main/imgs/picture05.png"
+colors <- makePaletteCLARA(url5, n = 6)
+barplot(1:length(colors), col=colors)
+```
+
+<img src="imgs/Rplot3.png" width="100%" />
+
 #### Example 4
 
 <img src="imgs/picture06.png" width="100%"/>
 
 
+``` r
+url6 = "https://github.com/musajajorge/makePalette/raw/main/imgs/picture06.png"
+colors <- makePaletteCLARA(url6, n = 6)
+barplot(1:length(colors), col=colors)
+```
+
+<img src="imgs/Rplot3.png" width="100%" />
 
 ### Examples with makePaletteKM (k-Means)
 
@@ -86,15 +108,35 @@ barplot(1:length(colors), col=colors)
 
 <img src="imgs/picture02.jpg" width="100%"/>
 
+``` r
+url2 = "https://github.com/musajajorge/makePalette/raw/main/imgs/picture02.jpg"
+colors <- makePaletteKM(url2, n = 10)
+barplot(1:length(colors), col=colors)
+```
+
+<img src="imgs/Rplot3.png" width="100%" />
 
 #### Example 6
 
+``` r
+url4 = "https://github.com/musajajorge/makePalette/raw/main/imgs/picture04.tiff"
+colors <- makePaletteKM(url4, n = 6)
+barplot(1:length(colors), col=colors)
+```
 
-
+<img src="imgs/Rplot3.png" width="100%" />
 
 #### Example 7
 
 <img src="imgs/picture06.png" width="100%"/>
+
+``` r
+url6 = "https://github.com/musajajorge/makePalette/raw/main/imgs/picture06.png"
+colors <- makePaletteKM(url6, n = 10)
+barplot(1:length(colors), col=colors)
+```
+
+<img src="imgs/Rplot3.png" width="100%" />
 
 ------------
 
