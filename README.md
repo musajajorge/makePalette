@@ -14,7 +14,7 @@
 
 <!-- badges: end -->
 
-[**makePalette**](https://github.com/musajajorge/makePalette/) It is a package containing functions that allow you to create your own color palette from an image, using the KMeans algorithm.
+[**makePalette**](https://github.com/musajajorge/makePalette/) is a package containing functions that allow you to create your own color palette from an image, using mathematical algorithms.
 
 ## Installation :arrow_double_down:
 
