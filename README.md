@@ -44,7 +44,7 @@ colors <- makePaletteCLARA(url1)
 barplot(1:length(colors), col=colors)
 ```
 
-By default, the MakePalette function will return a palette of 4 colors.
+By default, the function will return a palette of 4 colors.
 
 <img src="imgs/Rplot1.1.png" width="100%" />
 
