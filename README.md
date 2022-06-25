@@ -111,6 +111,8 @@ barplot(1:length(colors), col=colors)
 
 #### Example 6
 
+<img src="imgs/picture04.png" width="100%"/>
+
 ``` r
 url4 = "https://github.com/musajajorge/makePalette/raw/main/imgs/picture04.tiff"
 colors <- makePaletteKM(url4, n = 6)
