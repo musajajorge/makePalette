@@ -27,7 +27,7 @@ install.packages("makePalette")
 ## Usage :muscle:
 
 ``` r
-library(MakeYourPalette)
+library(makePalette)
 ```
 
 You need an image in jpg, png, tiff or similar format, stored in the hard disk of your PC or in some url.
