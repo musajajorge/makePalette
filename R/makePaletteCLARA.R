@@ -4,8 +4,7 @@ utils::globalVariables(c("clara"))
 #'
 #' @description Creates a color palette from an image, using the CLARA (Clustering Large Applications) algorithm
 #'
-#' @import raster
-#' @import rgdal
+#' @import terra
 #' @import cluster
 #' @import grDevices
 #' @import prismatic
@@ -25,10 +24,9 @@ utils::globalVariables(c("clara"))
 #'
 
 makePaletteCLARA <- function(photo, n=4){
-  col_R <- getValues(raster(photo, band=1))
-  col_G <- getValues(raster(photo, band=2))
-  col_B <- getValues(raster(photo, band=3))
-  df <- data.frame(col_R, col_G, col_B)
+  col <- terra::values(rast(photo))
+  df <- data.frame(col)
+  colnames(df) <- c("col_R","col_G","col_B")
   df <- unique(df)
   df2 <- rgb2hsv(r=df$col_R, g=df$col_G, b=df$col_B)
   df2 <- data.frame(t(df2))
