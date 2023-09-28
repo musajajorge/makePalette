@@ -39,8 +39,10 @@ You need an image in jpg, png, tiff or similar format, stored in the hard disk o
 
 ``` r
 url1 = "https://github.com/musajajorge/makePalette/raw/main/imgs/picture01.jpeg"
-colors <- makePaletteCLARA(url1)
+curl::curl_download(url1, "picture01.jpeg")
+colors <- makePaletteCLARA("picture01.jpeg")
 barplot(1:length(colors), col=colors)
+
 ```
 
 By default, the function will return a palette of 4 colors.
@@ -50,7 +52,7 @@ By default, the function will return a palette of 4 colors.
 If you want a palette with more colors, just specify it in the *n* parameter. 
 
 ``` r
-colors <- makePaletteCLARA(url1, n = 10)
+colors <- makePaletteCLARA("picture01.jpeg", n = 10)
 barplot(1:length(colors), col=colors)
 ```
 
@@ -61,8 +63,9 @@ barplot(1:length(colors), col=colors)
 <img src="imgs/picture03.jpg" width="100%"/>
 
 ``` r
-url3 = "https://github.com/musajajorge/makePalette/raw/main/imgs/picture03.jpg"
-colors <- makePaletteCLARA(url3, n = 6)
+url3 = "https://github.com/musajajorge/makePalette/raw/main/imgs/picture03.jpeg"
+curl::curl_download(url3, "picture03.jpeg")
+colors <- makePaletteCLARA("picture03.jpeg", n = 6)
 barplot(1:length(colors), col=colors)
 ```
 
@@ -75,8 +78,10 @@ barplot(1:length(colors), col=colors)
 
 ``` r
 url5 = "https://github.com/musajajorge/makePalette/raw/main/imgs/picture05.png"
-colors <- makePaletteCLARA(url5, n = 6)
+curl::curl_download(url5, "picture05.png")
+colors <- makePaletteCLARA("picture05.png", n = 6)
 barplot(1:length(colors), col=colors)
+
 ```
 
 <img src="imgs/Rplot3.png" width="100%" />
@@ -88,7 +93,8 @@ barplot(1:length(colors), col=colors)
 
 ``` r
 url6 = "https://github.com/musajajorge/makePalette/raw/main/imgs/picture06.png"
-colors <- makePaletteCLARA(url6, n = 6)
+curl::curl_download(url6, "picture06.png")
+colors <- makePaletteCLARA("picture06.png", n = 6)
 barplot(1:length(colors), col=colors)
 ```
 
@@ -102,7 +108,8 @@ barplot(1:length(colors), col=colors)
 
 ``` r
 url2 = "https://github.com/musajajorge/makePalette/raw/main/imgs/picture02.jpg"
-colors <- makePaletteKM(url2, n = 10)
+curl::curl_download(url2, "picture02.jpg")
+colors <- makePaletteKM("picture02.jpg", n = 10)
 barplot(1:length(colors), col=colors)
 ```
 
@@ -114,8 +121,10 @@ barplot(1:length(colors), col=colors)
 
 ``` r
 url4 = "https://github.com/musajajorge/makePalette/raw/main/imgs/picture04.tiff"
-colors <- makePaletteKM(url4, n = 6)
+curl::curl_download(url4, "picture04.tiff")
+colors <- makePaletteKM("picture04.tiff", n = 6)
 barplot(1:length(colors), col=colors)
+
 ```
 
 <img src="imgs/Rplot6.png" width="100%" />
@@ -126,7 +135,8 @@ barplot(1:length(colors), col=colors)
 
 ``` r
 url6 = "https://github.com/musajajorge/makePalette/raw/main/imgs/picture06.png"
-colors <- makePaletteKM(url6, n = 10)
+curl::curl_download(url6, "picture06.png")
+colors <- makePaletteKM("picture06.png", n = 6)
 barplot(1:length(colors), col=colors)
 ```
 
